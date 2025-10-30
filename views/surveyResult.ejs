@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Results</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1>Survey Summary</h1>
+        <p><strong>Name:</strong> <%= first %> <%= last %></p>
+        <p><strong>Age:</strong> <%= age %></p>
+        <p><strong>Occupation:</strong> <%= occupation %></p>
+        <p><strong>Drink Categories Consumed:</strong></p>
+        <ul>
+            <!-- If req.body.categories is an array list each item otherwise show the single string -->
+            <% if (Array.isArray(categories)) { %>
+                <% categories.forEach(function(cat) { %>
+                    <li><%= cat %></li>
+                <% }) %>
+                <% } else { %>
+                    <li><%= categories %></li>
+                    <% } %>
+                </ul>
+    </body>
+</html>

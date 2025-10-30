@@ -1,0 +1,111 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 500px;
+}
+
+/* General label styling for text inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Override for radio and checkbox labels */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Radio buttons and checkboxes: inline, spaced, aligned */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 10px;
+  transform: scale(1.2); /* slightly larger for visibility */
+  vertical-align: middle;
+}
+
+/* Optional: group spacing */
+form p,
+form h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+/* Container spacing */
+body > * {
+  margin-bottom: 30px;
+}

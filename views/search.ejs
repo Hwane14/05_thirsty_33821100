@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%=shopName%></title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1>Find what you are looking for in <%=shopName%> Shop</h1>
+        <form action = "/search_result" method = "GET">
+            <label for="search_text">Name: </label>
+            <input id="search_box" type="text" name="search_text">
+            <label for="category">Category: </label>
+            <input id="search_box" type="text" name="category">
+            <input type="submit" value="OK" >
+        </form>
+    </body>
+</html>
