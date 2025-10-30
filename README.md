@@ -45,5 +45,5 @@ node index.js
 ```
 
 ### 5. Open your browser
-Visit: http://localhost:8000
+Visit: http://www.doc.gold.ac.uk/usr/301/
 You should see the home page. Experiment by visiting the routes listed above.
