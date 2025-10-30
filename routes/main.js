@@ -47,13 +47,13 @@ router.get("/survey", (req, res) => {
 
 router.post("/surveyed", (req, res) => {
     var occupation;
-    console.log(req.body.isStudent);
     if(req.body.isStudent === "yes"){
         occupation = "Student"
     }
     else{
         occupation = "Non-student"
     }
+    // Render surveyResult.ejs page
     res.render("surveyResult.ejs", {...req.body, occupation});
 });
 
